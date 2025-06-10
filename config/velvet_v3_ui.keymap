@@ -171,10 +171,10 @@
 
         nav {
             bindings = <
-&trans         &trans  &kp HOME      &kp UP    &kp END        &kp GRAVE                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp PAGE_UP    &none   &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                      &trans  &trans  &trans  &trans  &trans  &trans
-&kp PAGE_DOWN  &none   &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                      &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans        &trans    &trans         &trans     &trans    &trans  &mo 5   &trans  &trans  &trans
+&trans         &trans     &kp HOME      &kp UP    &kp END        &kp GRAVE                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp PAGE_UP    &layer_en  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp PAGE_DOWN  &layer_ru  &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                      &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans        &trans    &trans         &trans     &trans    &trans  &mo 5   &trans  &trans  &trans
             >;
 
             display-name = "nav";
