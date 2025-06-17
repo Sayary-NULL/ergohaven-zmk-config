@@ -143,6 +143,13 @@
 
             label = "EN";
         };
+
+        so_program: so_program {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_CONTROL &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "SO_PROGRAM";
+        };
     };
 
     keymap {
@@ -152,8 +159,8 @@
             bindings = <
 &kp ESC  &kp Q              &kp W            &kp E            &kp R                &kp T                           &kp Y  &kp U                 &kp I             &kp O             &kp P                  &kp BSPC
 &kp TAB  &hml LEFT_SHIFT A  &hml LEFT_WIN S  &hml LEFT_ALT D  &hml LEFT_CONTROL F  &kp G                           &kp H  &hmr RIGHT_CONTROL J  &hmr RIGHT_ALT K  &hmr RIGHT_WIN L  &hmr RIGHT_SHIFT SEMI  &kp SINGLE_QUOTE
-&trans   &kp Z              &kp X            &kp C            &kp V                &kp B                           &kp N  &kp M                 &kp COMMA         &kp DOT           &kp SLASH              &kp LBKT
-                            &trans           &trans           &mo 5                &mo 2  &mkl 9 SPACE    &kp RET  &mo 3  &mo 6                 &kp PRINTSCREEN   &none
+&none    &kp Z              &kp X            &kp C            &kp V                &kp B                           &kp N  &kp M                 &kp COMMA         &kp DOT           &kp SLASH              &kp LBKT
+                            &none            &none            &mo 5                &mo 2  &mkl 9 SPACE    &kp RET  &mo 3  &mo 6                 &kp PRINTSCREEN   &none
             >;
 
             display-name = "en";
@@ -174,7 +181,7 @@
 &trans         &trans     &kp HOME      &kp UP    &kp END        &kp GRAVE                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp PAGE_UP    &layer_en  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                      &trans  &trans  &trans  &trans  &trans  &trans
 &kp PAGE_DOWN  &layer_ru  &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                      &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans        &trans    &trans         &trans     &trans    &trans  &mo 5   &trans  &trans  &trans
+                          &trans        &trans    &trans         &trans     &trans    &trans  &mo 10  &trans  &trans  &trans
             >;
 
             display-name = "nav";
@@ -185,7 +192,7 @@
 &trans  &kp RU_NUMERO  &kp LT    &kp EQUAL  &kp GT     &kp GRAVE                          &kp DLLR   &kp LBKT  &kp UNDER  &kp RBKT  &kp FSLH         &kp BSPC
 &trans  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &trans
 &trans  &kp SQT        &kp STAR  &kp COLON  &kp QMARK  &kp HASH                           &kp AT     &kp RBRC  &kp SEMI   &kp AMPS  &kp NON_US_BSLH  &trans
-                       &trans    &trans     &trans     &trans     &kp SPACE    &kp ENTER  &trans     &trans    &trans     &trans
+                       &trans    &trans     &trans     &mo 10     &kp SPACE    &kp ENTER  &trans     &trans    &trans     &trans
             >;
 
             display-name = "sym";
@@ -197,7 +204,7 @@
 &trans  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &en GRAVE                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
 &trans  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                           &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &trans
 &trans  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                           &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &trans
-                           &trans    &trans     &trans        &trans     &kp SPACE    &kp ENTER  &trans      &trans                     &trans     &trans
+                           &trans    &trans     &trans        &mo 10     &kp SPACE    &kp ENTER  &trans      &trans                     &trans     &trans
             >;
         };
 
@@ -248,6 +255,17 @@
             >;
 
             label = "Functional";
+        };
+
+        PO {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "program";
         };
     };
 };
