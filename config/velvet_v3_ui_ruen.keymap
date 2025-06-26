@@ -206,10 +206,10 @@
 
         mouse {
             bindings = <
-&none            &none            &none     &none      &none      &none                  &none  &none      &none      &none     &none            &none
-&mouse_mode 8 8  &mouse_mode 7 7  &mkp MB2  &mkp MB3   &mkp MB1   &none                  &none  &mkp MB1   &mkp MB3   &mkp MB2  &mouse_mode 7 7  &mouse_mode 8 8
-&none            &none            &none     &kp LC(C)  &kp LC(V)  &none                  &none  &kp LC(C)  &kp LC(V)  &none     &none            &none
-                                  &none     &none      &none      &none  &none    &none  &none  &none      &none      &none
+&none            &none            &none     &none      &none      &none                     &none   &none      &none      &none     &none            &none
+&mouse_mode 8 8  &mouse_mode 7 7  &mkp MB2  &mkp MB3   &mkp MB1   &none                     &none   &mkp MB1   &mkp MB3   &mkp MB2  &mouse_mode 7 7  &mouse_mode 8 8
+&none            &none            &none     &kp LC(C)  &kp LC(V)  &none                     &none   &kp LC(C)  &kp LC(V)  &none     &none            &none
+                                  &trans    &trans     &trans     &trans  &trans    &trans  &trans  &trans     &trans     &trans
             >;
         };
 
