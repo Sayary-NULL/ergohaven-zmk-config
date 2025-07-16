@@ -143,8 +143,8 @@
         en {
             bindings = <
 &kp ESC  &kp Q              &kp W            &kp E            &kp R                &kp T                          &kp Y  &kp U                 &kp I            &kp O             &kp P                  &kp BSPC
-&kp TAB  &hml LEFT_SHIFT A  &hml LEFT_WIN S  &hml LEFT_ALT D  &hml LEFT_CONTROL F  &kp G                          &kp H  &hmr RIGHT_CONTROL J  &hmr LEFT_ALT K  &hmr RIGHT_WIN L  &hmr RIGHT_SHIFT SEMI  &kp SINGLE_QUOTE
-&none    &kp Z              &kp X            &kp C            &kp V                &kp B                          &kp N  &kp M                 &kp COMMA        &kp DOT           &kp SLASH              &kp LBKT
+&kp TAB  &hml LEFT_SHIFT A  &hml LEFT_WIN S  &hml LEFT_ALT D  &hml LEFT_CONTROL F  &kp G                          &kp H  &hmr RIGHT_CONTROL J  &hmr LEFT_ALT K  &hmr RIGHT_WIN L  &hmr RIGHT_SHIFT SEMI  &none
+&none    &kp Z              &kp X            &kp C            &kp V                &kp B                          &kp N  &kp M                 &kp COMMA        &kp DOT           &none                  &none
                             &none            &none            &mo 5                &mo 2  &lt 9 SPACE    &kp RET  &mo 3  &mo 6                 &kp PRINTSCREEN  &none
             >;
 
@@ -156,7 +156,7 @@
             bindings = <
 &kp ESC  &kp RU_CYRILLIC_SHORT_I         &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U             &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE               &kp RU_CYRILLIC_SHA           &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE                &kp BSPC
 &kp TAB  &hml LEFT_SHIFT RU_CYRILLIC_EF  &hml LEFT_WIN RU_CYRILLIC_YERU  &hml LEFT_ALT RU_CYRILLIC_VE  &hml LEFT_CONTROL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RIGHT_CONTROL RU_CYRILLIC_O  &hmr LEFT_ALT RU_CYRILLIC_EL  &hmr RIGHT_WIN RU_CYRILLIC_DE  &hmr RIGHT_SHIFT RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&none    &kp RU_CYRILLIC_YA              &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES            &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN         &kp RU_CYRILLIC_BE            &kp RU_CYRILLIC_YU             &kp RU_DOT                        &kp RU_CYRILLIC_HA
+&none    &kp RU_CYRILLIC_YA              &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES            &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN         &kp RU_CYRILLIC_BE            &kp RU_CYRILLIC_YU             &none                             &kp RU_CYRILLIC_HA
                                          &none                           &none                         &mo 5                            &mo 2               &lt 9 SPACE    &kp RET  &mo 4               &mo 6                             &kp PRINTSCREEN               &none
             >;
         };
@@ -175,8 +175,8 @@
         sym {
             bindings = <
 &none  &kp RU_NUMERO  &kp LT    &kp EQUAL  &kp GT     &kp GRAVE                          &kp DLLR   &kp LBKT  &kp UNDER  &kp RBKT  &kp FSLH         &kp BSPC
-&none  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &none
-&none  &kp SQT        &kp STAR  &kp COLON  &kp QMARK  &kp HASH                           &kp AT     &kp RBRC  &kp SEMI   &kp AMPS  &kp NON_US_BSLH  &none
+&none  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &kp DOT
+&none  &kp SQT        &kp STAR  &kp COLON  &kp QMARK  &kp HASH                           &kp AT     &kp RBRC  &kp SEMI   &kp AMPS  &kp NON_US_BSLH  &kp COMMA
                       &none     &none      &none      &mo 10     &kp SPACE    &kp ENTER  &none      &none     &none      &none
             >;
 
@@ -187,8 +187,8 @@
             display-name = "sym_ru";
             bindings = <
 &none  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &en GRAVE                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
-&none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                           &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &none
-&none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                           &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &none
+&none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                           &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &kp RU_DOT
+&none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                           &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &kp RU_COMMA
                           &none     &none      &none         &mo 10     &kp SPACE    &kp ENTER  &none       &none                      &none      &none
             >;
         };
