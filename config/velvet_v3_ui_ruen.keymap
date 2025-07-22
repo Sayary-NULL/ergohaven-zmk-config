@@ -57,6 +57,15 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
         };
+
+        mm_dc_en: mm_dc_en {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_DC_EN";
+            bindings = <&kp DOT>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -144,7 +153,7 @@
             bindings = <
 &kp ESC  &kp Q              &kp W            &kp E            &kp R                &kp T                          &kp Y  &kp U                 &kp I            &kp O             &kp P                  &kp BSPC
 &kp TAB  &hml LEFT_SHIFT A  &hml LEFT_WIN S  &hml LEFT_ALT D  &hml LEFT_CONTROL F  &kp G                          &kp H  &hmr RIGHT_CONTROL J  &hmr LEFT_ALT K  &hmr RIGHT_WIN L  &hmr RIGHT_SHIFT SEMI  &none
-&none    &kp Z              &kp X            &kp C            &kp V                &kp B                          &kp N  &kp M                 &kp COMMA        &kp DOT           &none                  &none
+&none    &kp Z              &kp X            &kp C            &kp V                &kp B                          &kp N  &kp M                 &none            &none             &mm_dc_en              &none
                             &none            &none            &mo 5                &mo 2  &lt 9 SPACE    &kp RET  &mo 3  &mo 6                 &kp PRINTSCREEN  &none
             >;
 
@@ -156,7 +165,7 @@
             bindings = <
 &kp ESC  &kp RU_CYRILLIC_SHORT_I         &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U             &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE               &kp RU_CYRILLIC_SHA           &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE                &kp BSPC
 &kp TAB  &hml LEFT_SHIFT RU_CYRILLIC_EF  &hml LEFT_WIN RU_CYRILLIC_YERU  &hml LEFT_ALT RU_CYRILLIC_VE  &hml LEFT_CONTROL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RIGHT_CONTROL RU_CYRILLIC_O  &hmr LEFT_ALT RU_CYRILLIC_EL  &hmr RIGHT_WIN RU_CYRILLIC_DE  &hmr RIGHT_SHIFT RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&none    &kp RU_CYRILLIC_YA              &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES            &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN         &kp RU_CYRILLIC_BE            &kp RU_CYRILLIC_YU             &none                             &kp RU_CYRILLIC_HA
+&none    &kp RU_CYRILLIC_YA              &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES            &kp RU_CYRILLIC_EM               &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN         &kp RU_CYRILLIC_BE            &kp RU_CYRILLIC_YU             &kp FSLH                          &kp RU_CYRILLIC_HA
                                          &none                           &none                         &mo 5                            &mo 2               &lt 9 SPACE    &kp RET  &mo 4               &mo 6                             &kp PRINTSCREEN               &none
             >;
         };
