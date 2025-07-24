@@ -195,10 +195,10 @@
         sym_ru {
             display-name = "sym_ru";
             bindings = <
-&none  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &en GRAVE                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
-&none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                           &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &kp RU_DOT
-&none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                           &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &kp RU_COMMA
-                          &none     &none      &none         &mo 10     &kp SPACE    &kp ENTER  &none       &none                      &none      &none
+&none  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &kp RU_CYRILLIC_IO                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
+&none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                                    &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &kp RU_DOT
+&none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                                    &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &kp RU_COMMA
+                          &none     &none      &none         &mo 10              &kp SPACE    &kp ENTER  &none       &none                      &none      &none
             >;
         };
 
