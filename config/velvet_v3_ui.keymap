@@ -23,7 +23,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        base {
             bindings = <
 &kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T                        &kp Y  &kp U           &kp I      &kp O     &kp P     &kp BSPC
 &kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G                        &kp H  &kp J           &kp K      &kp L     &kp SEMI  &kp BSLH
@@ -34,7 +34,7 @@
             display-name = "Base";
         };
 
-        Navigation {
+        nav {
             bindings = <
 &trans         &trans          &kp HOME      &kp UP    &kp END        &kp GRAVE                    &trans  &trans  &trans  &trans  &trans  &trans
 &kp PAGE_UP    &kp LANG1       &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                      &trans  &trans  &trans  &trans  &trans  &trans
@@ -45,7 +45,7 @@
             display-name = "Navigation";
         };
 
-        Symbols {
+        sym {
             bindings = <
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                      &kp CARET  &kp DQT   &kp UNDER  &kp SQT   &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                       &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
@@ -67,31 +67,37 @@
             display-name = "Adjust";
         };
 
-        Mouse {
+        mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
+
+            display-name = "Mouse";
         };
 
-        Scroll {
+        scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            display-name = "Scroll";
         };
 
-        Sniper {
+        sniper {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
+
+            display-name = "Sniper";
         };
 
         Functional {

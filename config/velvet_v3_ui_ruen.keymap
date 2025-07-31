@@ -157,11 +157,11 @@
                             &none            &none            &mo 5                &mo 2  &lt 9 SPACE    &kp RET  &mo 3  &mo 6                 &kp PRINTSCREEN  &none
             >;
 
-            display-name = "en";
+            display-name = "Base";
         };
 
         ru {
-            display-name = "ru";
+            display-name = "Ru";
             bindings = <
 &kp ESC  &kp RU_CYRILLIC_SHORT_I         &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U             &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE               &kp RU_CYRILLIC_SHA           &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE                &kp BSPC
 &kp TAB  &hml LEFT_SHIFT RU_CYRILLIC_EF  &hml LEFT_WIN RU_CYRILLIC_YERU  &hml LEFT_ALT RU_CYRILLIC_VE  &hml LEFT_CONTROL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RIGHT_CONTROL RU_CYRILLIC_O  &hmr LEFT_ALT RU_CYRILLIC_EL  &hmr RIGHT_WIN RU_CYRILLIC_DE  &hmr RIGHT_SHIFT RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
@@ -178,10 +178,10 @@
                           &none         &none     &none          &none      &none    &none  &mo 10  &none          &none          &none
             >;
 
-            display-name = "nav";
+            display-name = "Navigation";
         };
 
-        sym {
+        sym_en {
             bindings = <
 &none  &kp RU_NUMERO  &kp LT    &kp EQUAL  &kp GT     &kp GRAVE                          &kp DLLR   &kp LBKT  &kp UNDER  &kp RBKT  &kp FSLH         &kp BSPC
 &none  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &kp DOT
@@ -189,11 +189,11 @@
                       &none     &none      &none      &mo 10     &kp SPACE    &kp ENTER  &none      &none     &none      &none
             >;
 
-            display-name = "sym";
+            display-name = "Symbols";
         };
 
         sym_ru {
-            display-name = "sym_ru";
+            display-name = "Symbols";
             bindings = <
 &none  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &kp RU_CYRILLIC_IO                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
 &none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                                    &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &kp RU_DOT
@@ -220,6 +220,8 @@
 &none            &none            &none     &kp LC(C)  &kp LC(V)  &none                     &none   &kp LC(C)  &kp LC(V)  &none     &none            &none
                                   &trans    &trans     &trans     &trans  &trans    &trans  &trans  &trans     &trans     &trans
             >;
+
+            display-name = "Mouse";
         };
 
         scroll {
@@ -229,6 +231,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            display-name = "Scroll";
         };
 
         sniper {
@@ -269,6 +273,8 @@
 &none  &none  &none  &none  &none  &none                  &bt BT_CLR    &none         &none         &none         &none         &bt BT_CLR_ALL
               &none  &none  &none  &none  &none    &none  &none         &none         &none         &none
             >;
+
+            display-name = "Sniper";
         };
     };
 };
