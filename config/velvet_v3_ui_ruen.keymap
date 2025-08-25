@@ -95,6 +95,12 @@
             key-positions = <44 45>;
             layers = <0 1>;
         };
+
+        lock_win {
+            bindings = <&lock_win>;
+            key-positions = <14 21>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -167,6 +173,13 @@
                 <&kp FSLH &kp F &kp E &kp A &kp T &kp U &kp R &kp E &kp FSLH &kp K &kp S &kp DOT &kp S &kp H &kp L &kp Y &kp A &kp H &kp T &kp I &kp N &kp FSLH>;
 
             label = "GIT_FEATURE";
+        };
+
+        lock_win: lock_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_en &kp LG(L)>;
+            label = "LOCK_WIN";
         };
     };
 
