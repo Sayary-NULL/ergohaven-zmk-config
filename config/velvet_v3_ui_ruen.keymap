@@ -153,7 +153,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp FSLH &kp B &kp U &kp G &kp F &kp I &kp X &kp FSLH &kp K &kp S &kp DOT &kp S &kp H &kp L &kp Y &kp A &kp H &kp T &kp I &kp N &kp FSLH>;
 
@@ -164,7 +164,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp FSLH &kp F &kp E &kp A &kp T &kp U &kp R &kp E &kp FSLH &kp K &kp S &kp DOT &kp S &kp H &kp L &kp Y &kp A &kp H &kp T &kp I &kp N &kp FSLH>;
 
@@ -182,7 +182,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S>;
 
@@ -193,7 +193,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE &kp R &kp C &kp MINUS &kp N2 &kp N5 &kp DOT>;
 
@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE &kp MINUS &kp B &kp SPACE>;
 
@@ -215,7 +215,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp L &kp L &kp ENTER>;
 
@@ -226,7 +226,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&layer_en>,
+                <&to_en>,
                 <&macro_wait_time 10>,
                 <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>;
 
