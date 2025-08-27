@@ -272,8 +272,8 @@
         sym_en {
             bindings = <
 &none  &kp RU_NUMERO  &kp LT    &kp EQUAL  &kp GT     &kp GRAVE                          &kp DLLR   &kp LBKT  &kp UNDER  &kp RBKT  &kp FSLH         &kp BSPC
-&none  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &kp DOT
-&none  &kp SQT        &kp STAR  &kp COLON  &kp QMARK  &kp HASH                           &kp AT     &kp RBRC  &kp SEMI   &kp AMPS  &kp NON_US_BSLH  &kp COMMA
+&none  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &kp PIPE
+&none  &kp SQT        &kp STAR  &kp COLON  &kp QMARK  &kp HASH                           &kp AT     &kp RBRC  &kp SEMI   &kp AMPS  &kp NON_US_BSLH  &none
                       &none     &none      &none      &mo 10     &kp SPACE    &kp ENTER  &none      &none     &none      &none
             >;
 
@@ -284,8 +284,8 @@
             display-name = "Symbols RU";
             bindings = <
 &none  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &kp RU_CYRILLIC_IO                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
-&none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                                    &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &kp RU_DOT
-&none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                                    &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &kp RU_COMMA
+&none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                                    &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &en PIPE
+&none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                                    &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &none
                           &none     &none      &none         &mo 10              &kp SPACE    &kp ENTER  &none       &none                      &none      &none
             >;
         };
