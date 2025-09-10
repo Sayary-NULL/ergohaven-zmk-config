@@ -232,6 +232,17 @@
 
             label = "GIT_PUSH";
         };
+
+        git_branch_list: git_branch_list {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to_en>,
+                <&macro_wait_time 10>,
+                <&kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp L &kp I &kp S &kp T &kp SPACE &kp SQT &kp SQT &kp LEFT>;
+
+            label = "GIT_BRANCH_LIST";
+        };
     };
 
     keymap {
@@ -345,10 +356,10 @@
 
         PO {
             bindings = <
-&trans  &trans  &trans  &trans     &trans            &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &git_pull  &git_checkout_rc  &git_bugfix                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &git_push  &git_checkout_b   &git_feature                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans     &trans            &trans        &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans     &trans            &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &git_branch_list  &git_pull  &git_checkout_rc  &git_bugfix                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &git_push  &git_checkout_b   &git_feature                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans            &trans     &trans            &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Macros";
