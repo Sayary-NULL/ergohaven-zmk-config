@@ -271,10 +271,10 @@
 
         nav {
             bindings = <
-&none          &kp K_CONTEXT_MENU  &kp HOME      &kp UP    &kp END        &kp GRAVE                  &none   &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &none  &none
-&kp PAGE_UP    &layer_en           &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &none   &kp LC(MINUS)   &kp LC(EQUAL)     &none       &none  &none
-&kp PAGE_DOWN  &layer_ru           &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                    &none   &none           &none             &none       &none  &none
-                                   &none         &none     &none          &none      &none    &none  &mo 10  &none           &none             &none
+&none          &kp K_CONTEXT_MENU  &kp HOME      &kp UP    &kp END        &kp GRAVE                  &none   &kp C_PREV     &kp C_PP       &kp C_NEXT  &none  &none
+&kp PAGE_UP    &layer_en           &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &none   &kp LC(MINUS)  &kp LC(EQUAL)  &none       &none  &none
+&kp PAGE_DOWN  &layer_ru           &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                    &none   &none          &none          &none       &none  &none
+                                   &none         &none     &none          &none      &none    &none  &mo 10  &none          &none          &none
             >;
 
             display-name = "Navigation";
