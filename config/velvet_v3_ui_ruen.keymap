@@ -259,7 +259,7 @@
         nav {
             bindings = <
 &none          &kp K_CONTEXT_MENU  &kp HOME      &kp UP    &kp END        &kp GRAVE                  &none   &kp LC(MINUS)  &kp LA(UP)    &none  &none  &none
-&kp PAGE_UP    &layer_en           &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &none   &kp LA(EQUAL)  &kp LA(DOWN)  &none  &none  &none
+&kp PAGE_UP    &layer_en           &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &none   &kp LC(EQUAL)  &kp LA(DOWN)  &none  &none  &none
 &kp PAGE_DOWN  &layer_ru           &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                    &none   &none          &none         &none  &none  &none
                                    &none         &none     &none          &none      &none    &none  &mo 10  &none          &none         &none
             >;
