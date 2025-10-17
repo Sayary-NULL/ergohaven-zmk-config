@@ -19,6 +19,21 @@
             hold-while-undecided;
         };
 
+        mouse_layer: mouse_layer {
+            compatible = "zmk,behavior-sticky-key";
+            label = "MOUSE_LAYER";
+            bindings = <&mo>;
+            #binding-cells = <1>;
+            release-after-ms = <200>;
+        };
+
+        zip_auto_mouse: zip_auto_mouse {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+            require-prior-idle-ms = <800>;
+            excluded-positions = <>;
+        };
+
         mouse_mode: mouse_mode {
             compatible = "zmk,behavior-hold-tap";
             label = "MM";
@@ -379,7 +394,7 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 9 20>;
+    input-processors = <&zip_auto_mouse 6 500>, <&zip_xy_scaler 9 20>;
 
     scroller {
         layers = <7>;
