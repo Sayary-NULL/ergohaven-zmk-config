@@ -90,7 +90,7 @@
         };
 
         cleart_all_bt {
-            bindings = <&sl 11>;
+            bindings = <&sl 10>;
             key-positions = <44 45>;
             layers = <0 1>;
         };
@@ -157,94 +157,6 @@
             bindings = <&kp LEFT_SHIFT &kp LEFT_CONTROL &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "SO_PROGRAM";
         };
-
-        git_bugfix: git_bugfix {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp FSLH &kp B &kp U &kp G &kp F &kp I &kp X &kp FSLH &kp K &kp S &kp DOT &kp S &kp H &kp L &kp Y &kp A &kp H &kp T &kp I &kp N &kp FSLH>;
-
-            label = "GIT_BUGFIX";
-        };
-
-        git_feature: git_feature {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp FSLH &kp F &kp E &kp A &kp T &kp U &kp R &kp E &kp FSLH &kp K &kp S &kp DOT &kp S &kp H &kp L &kp Y &kp A &kp H &kp T &kp I &kp N &kp FSLH>;
-
-            label = "GIT_FEATURE";
-        };
-
-        gti_status: gti_status {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S>;
-
-            label = "GTI_STATUS";
-        };
-
-        git_checkout_rc: git_checkout_rc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE &kp R &kp C &kp MINUS &kp N2 &kp N5 &kp DOT>;
-
-            label = "GIT_CHECKOUT_RC";
-        };
-
-        git_checkout_b: git_checkout_b {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE &kp MINUS &kp B &kp SPACE>;
-
-            label = "GIT_CHECKOUT_B";
-        };
-
-        git_pull: git_pull {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp L &kp L &kp ENTER>;
-
-            label = "GIT_PULL";
-        };
-
-        git_push: git_push {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp ENTER>;
-
-            label = "GIT_PUSH";
-        };
-
-        git_branch_list: git_branch_list {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to_en>,
-                <&macro_wait_time 10>,
-                <&kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp L &kp I &kp S &kp T &kp SPACE &kp SQT &kp SQT &kp LEFT>;
-
-            label = "GIT_BRANCH_LIST";
-        };
     };
 
     keymap {
@@ -255,7 +167,7 @@
 &kp ESC  &kp Q              &kp W            &kp E            &kp R                &kp T                                 &kp Y  &kp U                &kp I             &kp O             &kp P                  &kp BSPC
 &kp TAB  &hmr LEFT_SHIFT A  &hmr LEFT_WIN S  &hmr LEFT_ALT D  &hmr LEFT_CONTROL F  &lt 8 G                               &kp H  &hmr LEFT_CONTROL J  &hmr RIGHT_ALT K  &hmr RIGHT_WIN L  &hmr RIGHT_SHIFT SEMI  &mo 7
 &none    &lt 7 Z            &kp X            &kp C            &lt 6 V              &kp B                                 &kp N  &kp M                &none             &none             &mm_dc_en              &mo 6
-                            &tog 6           &tog 7           &mo 5                &mo 2    &lt 9 SPACE    &lt 12 ENTER  &mo 3  &none                &kp PRINTSCREEN   &tog 6
+                            &tog 6           &tog 7           &mo 5                &mo 2    &lt 9 SPACE    &lt 11 ENTER  &mo 3  &none                &kp PRINTSCREEN   &tog 6
             >;
 
             display-name = "EN";
@@ -267,16 +179,16 @@
 &kp ESC  &kp RU_CYRILLIC_SHORT_I         &kp RU_CYRILLIC_TSE             &kp RU_CYRILLIC_U             &kp RU_CYRILLIC_KA               &kp RU_CYRILLIC_IE                                 &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE               &kp RU_CYRILLIC_SHA           &kp RU_CYRILLIC_SHCHA          &kp RU_CYRILLIC_ZE                &kp BSPC
 &kp TAB  &hmr LEFT_SHIFT RU_CYRILLIC_EF  &hmr LEFT_WIN RU_CYRILLIC_YERU  &hmr LEFT_ALT RU_CYRILLIC_VE  &hmr LEFT_CONTROL RU_CYRILLIC_A  &lt 8 RU_CYRILLIC_PE                               &kp RU_CYRILLIC_ER  &hmr RIGHT_CONTROL RU_CYRILLIC_O  &hmr LEFT_ALT RU_CYRILLIC_EL  &hmr RIGHT_WIN RU_CYRILLIC_DE  &hmr RIGHT_SHIFT RU_CYRILLIC_ZHE  &lt 7 RU_CYRILLIC_E
 &none    &lt 7 RU_CYRILLIC_YA            &kp RU_CYRILLIC_CHE             &kp RU_CYRILLIC_ES            &lt 6 RU_CYRILLIC_EM             &kp RU_CYRILLIC_I                                  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN         &kp RU_CYRILLIC_BE            &kp RU_CYRILLIC_YU             &kp FSLH                          &lt 6 RU_CYRILLIC_HA
-                                         &tog 6                          &tog 7                        &mo 5                            &mo 2                 &lt 9 SPACE    &lt 12 ENTER  &mo 4               &none                             &kp PRINTSCREEN               &tog 6
+                                         &tog 6                          &tog 7                        &mo 5                            &mo 2                 &lt 9 SPACE    &lt 11 ENTER  &mo 4               &none                             &kp PRINTSCREEN               &tog 6
             >;
         };
 
         nav {
             bindings = <
-&none          &kp K_CONTEXT_MENU  &kp HOME      &kp UP    &kp END        &kp GRAVE                  &none   &kp LC(MINUS)  &kp LA(UP)    &none  &none  &none
-&kp PAGE_UP    &layer_en           &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &none   &kp LC(EQUAL)  &kp LA(DOWN)  &none  &none  &none
-&kp PAGE_DOWN  &layer_ru           &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                    &none   &none          &none         &none  &none  &none
-                                   &none         &none     &none          &none      &none    &none  &mo 10  &none          &none         &none
+&none          &kp K_CONTEXT_MENU  &kp HOME      &kp UP    &kp END        &kp GRAVE                  &none  &kp LC(MINUS)  &kp LA(UP)    &none  &none  &none
+&kp PAGE_UP    &layer_en           &kp LEFT      &kp DOWN  &kp RIGHT      &kp RET                    &none  &kp LC(EQUAL)  &kp LA(DOWN)  &none  &none  &none
+&kp PAGE_DOWN  &layer_ru           &kp LC(LEFT)  &kp CLCK  &kp LC(RIGHT)  &kp DEL                    &none  &none          &none         &none  &none  &none
+                                   &none         &none     &none          &none      &none    &none  &none  &none          &none         &none
             >;
 
             display-name = "Navigation";
@@ -287,7 +199,7 @@
 &none  &kp RU_NUMERO  &kp LT    &kp EQUAL  &kp GT     &kp GRAVE                          &kp DLLR   &kp LBKT  &kp UNDER  &kp RBKT  &kp FSLH         &kp BSPC
 &none  &kp DQT        &kp LPAR  &kp MINUS  &kp RPAR   &kp PLUS                           &kp PRCNT  &kp LBRC  &kp TILDE  &kp RBRC  &kp EXCL         &kp PIPE
 &none  &kp SQT        &kp STAR  &kp COLON  &kp QMARK  &kp HASH                           &kp AT     &kp RBRC  &kp SEMI   &kp AMPS  &kp NON_US_BSLH  &none
-                      &none     &none      &none      &mo 10     &kp SPACE    &kp ENTER  &none      &none     &none      &none
+                      &none     &none      &none      &none      &kp SPACE    &kp ENTER  &none      &none     &none      &none
             >;
 
             display-name = "Symbols EN";
@@ -299,7 +211,7 @@
 &none  &kp RU_NUMERO      &en LT    &kp EQUAL  &en GT        &kp RU_CYRILLIC_IO                          &en DOLLAR  &en LEFT_BRACKET           &kp UNDER  &en RIGHT_BRACKET  &en FSLH  &kp BACKSPACE
 &none  &en DOUBLE_QUOTES  &kp LPAR  &kp MINUS  &kp RPAR      &kp PLUS                                    &kp PRCNT   &en LBRC                   &en TILDE  &en RBRC           &kp EXCL  &en PIPE
 &none  &en SINGLE_QUOTE   &kp STAR  &en COLON  &en QUESTION  &en HASH                                    &en AT      &kp RU_CYRILLIC_HARD_SIGN  &en SEMI   &en AMPS           &kp NUBS  &none
-                          &none     &none      &none         &mo 10              &kp SPACE    &kp ENTER  &none       &none                      &none      &none
+                          &none     &none      &none         &mo 0               &kp SPACE    &kp ENTER  &none       &none                      &none      &none
             >;
         };
 
@@ -328,7 +240,7 @@
         scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &tog 7  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &tog 7  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
@@ -339,7 +251,7 @@
         sniper {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&tog 8  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &tog 8
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
@@ -356,17 +268,6 @@
             >;
 
             label = "Fn";
-        };
-
-        git {
-            bindings = <
-&trans  &trans  &trans            &trans     &trans            &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &git_branch_list  &git_pull  &git_checkout_rc  &git_bugfix                     &trans  &none   &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &git_push  &git_checkout_b   &git_feature                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans            &trans     &trans            &trans        &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "GIT";
         };
 
         BLT {
