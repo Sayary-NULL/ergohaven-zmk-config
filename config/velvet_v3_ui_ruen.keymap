@@ -161,29 +161,36 @@
         sym_low9_quatuion: sym_low9_quatuion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp COMMA &kp COMMA>;
+            bindings = <&unicode_macro_keys &kp COMMA &kp COMMA>;
             label = "SYM_LOW9_QUATUION";
         };
 
         sym_up_quatuion: sym_up_quatuion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp LESS_THAN &kp DOUBLE_QUOTES>;
+            bindings = <&unicode_macro_keys &kp LESS_THAN &kp DOUBLE_QUOTES>;
             label = "SYM_UP_QUATUION";
         };
 
         sym_tree_left: sym_tree_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp LESS_THAN &kp LESS_THAN>;
+            bindings = <&unicode_macro_keys &kp LESS_THAN &kp LESS_THAN>;
             label = "SYM_TREE_LEFT";
         };
 
         sym_tree_right: sym_tree_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp GREATER_THAN &kp GREATER_THAN>;
+            bindings = <&unicode_macro_keys &kp GREATER_THAN &kp GREATER_THAN>;
             label = "SYM_TREE_RIGHT";
+        };
+
+        unicode_macro_keys: unic_macro_keys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL>;
+            label = "UNIC_MACRO_KEYS";
         };
     };
 
