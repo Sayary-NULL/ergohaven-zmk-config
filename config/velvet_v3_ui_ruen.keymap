@@ -226,7 +226,7 @@
                                    &none         &none     &none          &none      &none    &none  &none  &none          &none         &none
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym_en {
