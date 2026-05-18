@@ -146,7 +146,7 @@
             bindings = <
 &none      &kp K_APP  &kp HOME            &kp UP          &kp END              &none                    &none  &none  &none  &none  &none  &none
 &kp PG_UP  &layer_en  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none                    &none  &none  &none  &none  &none  &none
-&kp PG_DN  &layer_en  &kp LC(LEFT_ARROW)  &kp CAPS        &kp LC(RIGHT_ARROW)  &kp DEL                  &none  &none  &none  &none  &none  &none
+&kp PG_DN  &layer_ru  &kp LC(LEFT_ARROW)  &kp CAPS        &kp LC(RIGHT_ARROW)  &kp DEL                  &none  &none  &none  &none  &none  &none
                       &none               &none           &none                &none    &none    &none  &none  &none  &none  &none
             >;
 
